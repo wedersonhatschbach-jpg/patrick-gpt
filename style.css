@@ -1,24 +1,31 @@
 /* ===== Estilos Gerais ===== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8; /* fundo bem claro */
-    color: #2c3e50; /* cor de texto escura */
+    background-color: #f5f7fa; /* fundo super claro */
+    color: #2c3e50; /* texto escuro para contraste */
 }
 
 header {
-    background-color: #6ca0dc; /* azul suave */
+    background-color: #5d9cec; /* azul suave */
     color: white;
-    padding: 20px;
+    padding: 25px 10px;
     text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 12px;
     font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* dourado suave ao passar */
 }
 
 main {
@@ -27,60 +34,92 @@ main {
 
 h1, h2 {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagem-escola {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagem-escola img {
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* ===== Botões Interativos ===== */
 .btn-interativo {
     display: block;
-    width: 100%;
+    width: 90%;
     max-width: 300px;
-    margin: 10px auto;
-    padding: 12px 20px;
+    margin: 12px auto;
+    padding: 14px 20px;
     font-size: 16px;
-    color: #2c3e50; /* texto escuro */
-    background-color: #a3c9f1; /* azul pastel */
+    color: #2c3e50;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn-interativo:hover {
-    background-color: #7fb3e6; /* azul um pouco mais escuro ao passar */
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
+
+/* ===== Cores dos botões ===== */
+.btn-estrutura { background-color: #a3c9f1; }
+.btn-ensino { background-color: #f9d5a7; }
+.btn-inclusao { background-color: #c2f0c2; }
+.btn-tecnologia { background-color: #f0c2f0; }
+.btn-rampas { background-color: #ffd6a5; }
+.btn-biblioteca { background-color: #b5ead7; }
+
+/* Hover cores um pouco mais escuras */
+.btn-estrutura:hover { background-color: #7fb3e6; }
+.btn-ensino:hover { background-color: #f7b680; }
+.btn-inclusao:hover { background-color: #a6d8a6; }
+.btn-tecnologia:hover { background-color: #e69fe6; }
+.btn-rampas:hover { background-color: #ffb87a; }
+.btn-biblioteca:hover { background-color: #8fd6bb; }
 
 /* ===== Conteúdo Toggle ===== */
 .conteudo-toggle {
     display: none;
-    max-width: 600px;
-    margin: 0 auto 20px auto;
-    padding: 15px;
-    background-color: #dbe9f7; /* azul bem leve para conteúdo */
-    border-radius: 8px;
-    line-height: 1.5;
+    max-width: 650px;
+    margin: 10px auto 20px auto;
+    padding: 18px;
+    background-color: #e3f2fd; /* azul pastel claro */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    line-height: 1.6;
     color: #2c3e50;
+    transition: all 0.3s;
 }
 
 /* ===== Rodapé ===== */
 footer {
     text-align: center;
-    background-color: #6ca0dc; /* azul header */
+    background-color: #5d9cec;
     color: white;
-    padding: 10px;
+    padding: 15px 10px;
     margin-top: 30px;
+    box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+    font-size: 14px;
 }
 
-/* ===== Versão com cores diferentes por botão (opcional) ===== */
-/* Se quiser diferenciar cada botão, pode usar assim: */
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+    .btn-interativo {
+        width: 95%;
+        font-size: 15px;
+    }
 
-.btn-estrutura { background-color: #a3c9f1; } /* azul pastel */
-.btn-ensino { background-color: #f9d5a7; color: #2c3e50; } /* laranja claro */
-.btn-inclusao { background-color: #c2f0c2; color: #2c3e50; } /* verde claro */
-.btn-tecnologia { background-color: #f0c2f0; color: #2c3e50; } /* rosa claro */
-
-.btn-estrutura:hover { background-color: #7fb3e6; }
-.btn-ensino:hover { background-color: #f7b680; }
-.btn-inclusao:hover { background-color: #a6d8a6; }
-.btn-tecnologia:hover { background-color: #e69fe6; }
+    .conteudo-toggle {
+        width: 95%;
+        padding: 15px;
+    }
+}
