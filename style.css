@@ -75,52 +75,75 @@ main {
     margin-top: 20px;
 }
 
-.card {
-    flex: 1;
-    min-width: 200px;
+/* ===== Estilos Gerais ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* fundo bem claro */
+    color: #2c3e50; /* cor de texto escura para contraste */
+}
+
+header {
+    background-color: #6ca0dc; /* azul suave */
+    color: white;
     padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
     text-align: center;
 }
 
-/* Rodapé */
-footer {
-    background-color: #004080;
+nav a {
     color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
     text-align: center;
+}
+
+/* ===== Botões Interativos ===== */
+.btn-interativo {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #2c3e50; /* texto escuro */
+    background-color: #a3c9f1; /* azul pastel */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-interativo:hover {
+    background-color: #7fb3e6; /* azul um pouco mais escuro ao passar */
+    transform: scale(1.05);
+}
+
+/* ===== Conteúdo Toggle ===== */
+.conteudo-toggle {
+    display: none;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding: 15px;
+    background-color: #dbe9f7; /* azul bem leve para conteúdo */
+    border-radius: 8px;
+    line-height: 1.5;
+}
+
+/* ===== Rodapé ===== */
+footer {
+    text-align: center;
+    background-color: #6ca0dc; /* mesmo azul do header */
+    color: white;
     padding: 10px;
     margin-top: 30px;
 }
-
-/* Botões Chamativos */
-.botoes-chamativos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.botoes-chamativos button {
-    padding: 12px 20px;
-    font-size: 16px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.botoes-chamativos button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-/* Cores dos botões */
-.btn-vermelho { background-color: #e74c3c; }
-.btn-verde { background-color: #27ae60; }
-.btn-azul { background-color: #2980b9; }
-.btn-amarelo { background-color: #f1c40f; color: #333; }
-.btn-roxo { background-color: #8e44ad; }
-.btn-laranja { background-color: #e67e22; }
