@@ -1,87 +1,10 @@
-/* Estilos Gerais */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-}
-
-header {
-    background-color: #004080;
-    color: white;
-    padding: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 15px;
-    font-weight: bold;
-}
-
-.busca {
-    margin-top: 10px;
-}
-
-.busca input {
-    padding: 5px;
-    font-size: 16px;
-}
-
-.busca button {
-    padding: 6px 12px;
-    font-size: 16px;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-left: 5px;
-}
-
-/* Seção Principal */
-main {
-    padding: 20px;
-}
-
-.hero {
-    background-color: #e6f2ff;
-    padding: 30px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.conteudo {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 20px;
-}
-
-.conteudo .texto {
-    flex: 1;
-    min-width: 250px;
-}
-
-.conteudo .imagem img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* Cards */
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 20px;
-}
-
 /* ===== Estilos Gerais ===== */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f4f8; /* fundo bem claro */
-    color: #2c3e50; /* cor de texto escura para contraste */
+    color: #2c3e50; /* cor de texto escura */
 }
 
 header {
@@ -137,13 +60,27 @@ h1, h2 {
     background-color: #dbe9f7; /* azul bem leve para conteúdo */
     border-radius: 8px;
     line-height: 1.5;
+    color: #2c3e50;
 }
 
 /* ===== Rodapé ===== */
 footer {
     text-align: center;
-    background-color: #6ca0dc; /* mesmo azul do header */
+    background-color: #6ca0dc; /* azul header */
     color: white;
     padding: 10px;
     margin-top: 30px;
 }
+
+/* ===== Versão com cores diferentes por botão (opcional) ===== */
+/* Se quiser diferenciar cada botão, pode usar assim: */
+
+.btn-estrutura { background-color: #a3c9f1; } /* azul pastel */
+.btn-ensino { background-color: #f9d5a7; color: #2c3e50; } /* laranja claro */
+.btn-inclusao { background-color: #c2f0c2; color: #2c3e50; } /* verde claro */
+.btn-tecnologia { background-color: #f0c2f0; color: #2c3e50; } /* rosa claro */
+
+.btn-estrutura:hover { background-color: #7fb3e6; }
+.btn-ensino:hover { background-color: #f7b680; }
+.btn-inclusao:hover { background-color: #a6d8a6; }
+.btn-tecnologia:hover { background-color: #e69fe6; }

@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acessibilidade Interativa - Cristo Rei</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- link para o CSS que passei -->
     <style>
+        /* ===== Estilos Gerais ===== */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f0f4f8; /* fundo bem claro */
+            color: #2c3e50; /* cor de texto escura para contraste */
         }
 
         header {
-            background-color: #004080;
+            background-color: #6ca0dc; /* azul suave */
             color: white;
             padding: 20px;
             text-align: center;
@@ -35,7 +37,7 @@
             text-align: center;
         }
 
-        /* Botões interativos */
+        /* ===== Botões Interativos ===== */
         .btn-interativo {
             display: block;
             width: 100%;
@@ -43,8 +45,8 @@
             margin: 10px auto;
             padding: 12px 20px;
             font-size: 16px;
-            color: white;
-            background-color: #2980b9;
+            color: #2c3e50; /* texto escuro */
+            background-color: #a3c9f1; /* azul pastel */
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -53,18 +55,28 @@
         }
 
         .btn-interativo:hover {
-            background-color: #3498db;
+            background-color: #7fb3e6; /* azul um pouco mais escuro ao passar */
             transform: scale(1.05);
         }
 
-        /* Conteúdo que aparece ao clicar */
+        /* ===== Conteúdo Toggle ===== */
         .conteudo-toggle {
             display: none;
             max-width: 600px;
             margin: 0 auto 20px auto;
             padding: 15px;
-            background-color: #f2f2f2;
+            background-color: #dbe9f7; /* azul bem leve para conteúdo */
             border-radius: 8px;
+            line-height: 1.5;
+        }
+
+        /* ===== Rodapé ===== */
+        footer {
+            text-align: center;
+            background-color: #6ca0dc; /* mesmo azul do header */
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -82,6 +94,7 @@
 <main>
     <h2>Explore as Opções de Acessibilidade</h2>
 
+    <!-- Botões interativos -->
     <button class="btn-interativo" onclick="toggleConteudo('estrutura')">♿ Estrutura</button>
     <div id="estrutura" class="conteudo-toggle">
         <p>Rampas, corrimãos, banheiros adaptados e acessos projetados para todos os alunos, garantindo mobilidade segura e autonomia.</p>
@@ -105,10 +118,11 @@
 </main>
 
 <footer>
-    <p style="text-align:center; background-color:#004080; color:white; padding:10px; margin-top:30px;">© 2026 - Projeto Escolar | Acessibilidade no Cristo Rei</p>
+    <p>© 2026 - Projeto Escolar | Acessibilidade no Cristo Rei</p>
 </footer>
 
 <script>
+    // Função que abre ou fecha o conteúdo ao clicar no botão
     function toggleConteudo(id) {
         const elemento = document.getElementById(id);
         if (elemento.style.display === "block") {
