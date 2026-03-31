@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acessibilidade Interativa - Cristo Rei</title>
-    <link rel="stylesheet" href="style.css"> <!-- link para o CSS que passei -->
+    <link rel="stylesheet" href="style.css">
     <style>
         /* ===== Estilos Gerais ===== */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8; /* fundo bem claro */
-            color: #2c3e50; /* cor de texto escura para contraste */
+            background-color: #f0f4f8;
+            color: #2c3e50;
         }
 
         header {
-            background-color: #6ca0dc; /* azul suave */
+            background-color: #6ca0dc;
             color: white;
             padding: 20px;
             text-align: center;
@@ -37,6 +37,17 @@
             text-align: center;
         }
 
+        /* ===== Imagem da escola ===== */
+        .imagem-escola {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .imagem-escola img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
         /* ===== Botões Interativos ===== */
         .btn-interativo {
             display: block;
@@ -45,8 +56,8 @@
             margin: 10px auto;
             padding: 12px 20px;
             font-size: 16px;
-            color: #2c3e50; /* texto escuro */
-            background-color: #a3c9f1; /* azul pastel */
+            color: #2c3e50;
+            background-color: #a3c9f1;
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -55,7 +66,7 @@
         }
 
         .btn-interativo:hover {
-            background-color: #7fb3e6; /* azul um pouco mais escuro ao passar */
+            background-color: #7fb3e6;
             transform: scale(1.05);
         }
 
@@ -65,7 +76,7 @@
             max-width: 600px;
             margin: 0 auto 20px auto;
             padding: 15px;
-            background-color: #dbe9f7; /* azul bem leve para conteúdo */
+            background-color: #dbe9f7;
             border-radius: 8px;
             line-height: 1.5;
         }
@@ -73,11 +84,26 @@
         /* ===== Rodapé ===== */
         footer {
             text-align: center;
-            background-color: #6ca0dc; /* mesmo azul do header */
+            background-color: #6ca0dc;
             color: white;
             padding: 10px;
             margin-top: 30px;
         }
+
+        /* ===== Cores diferentes por botão (mais divertido) ===== */
+        .btn-estrutura { background-color: #a3c9f1; }
+        .btn-ensino { background-color: #f9d5a7; color: #2c3e50; }
+        .btn-inclusao { background-color: #c2f0c2; color: #2c3e50; }
+        .btn-tecnologia { background-color: #f0c2f0; color: #2c3e50; }
+        .btn-rampas { background-color: #ffd6a5; color: #2c3e50; }
+        .btn-biblioteca { background-color: #b5ead7; color: #2c3e50; }
+
+        .btn-estrutura:hover { background-color: #7fb3e6; }
+        .btn-ensino:hover { background-color: #f7b680; }
+        .btn-inclusao:hover { background-color: #a6d8a6; }
+        .btn-tecnologia:hover { background-color: #e69fe6; }
+        .btn-rampas:hover { background-color: #ffb87a; }
+        .btn-biblioteca:hover { background-color: #8fd6bb; }
     </style>
 </head>
 <body>
@@ -94,25 +120,40 @@
 <main>
     <h2>Explore as Opções de Acessibilidade</h2>
 
+    <!-- Foto da escola -->
+    <div class="imagem-escola">
+        <img src="https://gmaisnoticias.com/fotos/0f84b73cb5a575557c2d5c6c941f7086f91e6302.jpg" alt="Colégio Cristo Rei">
+    </div>
+
     <!-- Botões interativos -->
-    <button class="btn-interativo" onclick="toggleConteudo('estrutura')">♿ Estrutura</button>
+    <button class="btn-interativo btn-estrutura" onclick="toggleConteudo('estrutura')">♿ Estrutura</button>
     <div id="estrutura" class="conteudo-toggle">
-        <p>Rampas, corrimãos, banheiros adaptados e acessos projetados para todos os alunos, garantindo mobilidade segura e autonomia.</p>
+        Rampas, corrimãos, banheiros adaptados e acessos projetados para todos os alunos, garantindo mobilidade segura e autonomia.
     </div>
 
-    <button class="btn-interativo" onclick="toggleConteudo('ensino')">📚 Ensino</button>
+    <button class="btn-interativo btn-ensino" onclick="toggleConteudo('ensino')">📚 Ensino</button>
     <div id="ensino" class="conteudo-toggle">
-        <p>Materiais adaptados, livros em braile, recursos multimídia e métodos de ensino inclusivos para que todos aprendam igualmente.</p>
+        Materiais adaptados, livros em braile, recursos multimídia e métodos de ensino inclusivos para que todos aprendam igualmente.
     </div>
 
-    <button class="btn-interativo" onclick="toggleConteudo('inclusao')">🤝 Inclusão</button>
+    <button class="btn-interativo btn-inclusao" onclick="toggleConteudo('inclusao')">🤝 Inclusão</button>
     <div id="inclusao" class="conteudo-toggle">
-        <p>Respeito à diversidade, valorização das diferenças e incentivo à participação de todos em atividades escolares e sociais.</p>
+        Respeito à diversidade, valorização das diferenças e incentivo à participação de todos em atividades escolares e sociais.
     </div>
 
-    <button class="btn-interativo" onclick="toggleConteudo('tecnologia')">💻 Tecnologia</button>
+    <button class="btn-interativo btn-tecnologia" onclick="toggleConteudo('tecnologia')">💻 Tecnologia</button>
     <div id="tecnologia" class="conteudo-toggle">
-        <p>Uso de softwares educacionais, ferramentas de acessibilidade digital e dispositivos de apoio para alunos com necessidades especiais.</p>
+        Uso de softwares educacionais, ferramentas de acessibilidade digital e dispositivos de apoio para alunos com necessidades especiais.
+    </div>
+
+    <button class="btn-interativo btn-rampas" onclick="toggleConteudo('rampas')">🚪 Rampas</button>
+    <div id="rampas" class="conteudo-toggle">
+        Rampas seguras em toda a escola, garantindo que alunos com mobilidade reduzida possam se locomover sem obstáculos.
+    </div>
+
+    <button class="btn-interativo btn-biblioteca" onclick="toggleConteudo('biblioteca')">📖 Biblioteca Acessível</button>
+    <div id="biblioteca" class="conteudo-toggle">
+        Biblioteca com livros adaptados, recursos digitais e espaços acessíveis para todos os alunos.
     </div>
 
 </main>
@@ -122,7 +163,6 @@
 </footer>
 
 <script>
-    // Função que abre ou fecha o conteúdo ao clicar no botão
     function toggleConteudo(id) {
         const elemento = document.getElementById(id);
         if (elemento.style.display === "block") {
