@@ -74,3 +74,51 @@ footer {
     background: #4f46e5;
     color: white;
 }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Cristo Rei</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Quiz Cristo Rei</h1>
+    <p>Escolha uma pergunta e veja a resposta!</p>
+</header>
+
+<main>
+
+<div class="quiz-container">
+    <label for="pergunta">Selecione a pergunta:</label>
+    <select id="pergunta">
+        <option value="">-- Escolha uma pergunta --</option>
+        <option value="1">Qual é a missão da escola?</option>
+        <option value="2">Quais recursos de acessibilidade existem?</option>
+        <option value="3">Como funciona a inclusão?</option>
+        <option value="4">Quais esportes são oferecidos?</option>
+        <option value="5">Quais tecnologias são usadas?</option>
+        <option value="6">O que tem na biblioteca?</option>
+        <option value="7">Como é a estrutura da escola?</option>
+        <option value="8">Quais eventos acontecem?</option>
+        <option value="9">Como é o ensino adaptado?</option>
+        <option value="10">Qual é o horário de funcionamento?</option>
+    </select>
+
+    <div id="resposta" class="resposta">
+        <p>Selecione uma pergunta acima para ver a resposta.</p>
+    </div>
+</div>
+
+</main>
+
+<footer>
+    © 2026 - Projeto Cristo Rei
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
