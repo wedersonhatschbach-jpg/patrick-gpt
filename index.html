@@ -1,210 +1,79 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristo Rei - Educação Inclusiva</title>
+
+    <!-- LINK DO CSS -->
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f7fa;
-            color: #2c3e50;
-        }
-
-        header {
-            background-color: #5d9cec;
-            color: white;
-            padding: 25px 10px;
-            text-align: center;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 12px;
-            font-weight: bold;
-            font-size: 16px;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #ffd700;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        h1, h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .imagem-escola {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .imagem-escola img {
-            max-width: 90%;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .btn-interativo {
-            display: block;
-            width: 90%;
-            max-width: 300px;
-            margin: 12px auto;
-            padding: 14px 20px;
-            font-size: 16px;
-            color: #2c3e50;
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .btn-interativo:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        }
-
-        .btn-estrutura { background-color: #a3c9f1; }
-        .btn-ensino { background-color: #f9d5a7; }
-        .btn-inclusao { background-color: #c2f0c2; }
-        .btn-tecnologia { background-color: #f0c2f0; }
-        .btn-rampas { background-color: #ffd6a5; }
-        .btn-biblioteca { background-color: #b5ead7; }
-        .btn-sobre { background-color: #f7b7b7; }
-        .btn-acessibilidade { background-color: #d3bdf7; }
-
-        .btn-estrutura:hover { background-color: #7fb3e6; }
-        .btn-ensino:hover { background-color: #f7b680; }
-        .btn-inclusao:hover { background-color: #a6d8a6; }
-        .btn-tecnologia:hover { background-color: #e69fe6; }
-        .btn-rampas:hover { background-color: #ffb87a; }
-        .btn-biblioteca:hover { background-color: #8fd6bb; }
-        .btn-sobre:hover { background-color: #f28f8f; }
-        .btn-acessibilidade:hover { background-color: #b49df7; }
-
-        .conteudo-toggle {
-            display: none;
-            max-width: 650px;
-            margin: 10px auto 20px auto;
-            padding: 18px;
-            background-color: #e3f2fd;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            line-height: 1.6;
-            color: #2c3e50;
-            transition: all 0.3s;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #5d9cec;
-            color: white;
-            padding: 15px 10px;
-            margin-top: 30px;
-            box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
-            font-size: 14px;
-        }
-
-        @media (max-width: 600px) {
-            .btn-interativo {
-                width: 95%;
-                font-size: 15px;
-            }
-
-            .conteudo-toggle {
-                width: 95%;
-                padding: 15px;
-            }
-        }
-    </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Cristo Rei - Educação Inclusiva</h1>
+    <h2>Cristo Rei</h2>
     <nav>
         <a href="#">Início</a>
         <a href="#">Sobre</a>
-        <a href="#">Acessibilidade</a>
+        <a href="#">Contato</a>
     </nav>
 </header>
 
 <main>
-    <h2>Conheça Nossa Escola</h2>
 
-    <!-- Foto da escola -->
-    <div class="imagem-escola">
-        <img src="https://gmaisnoticias.com/fotos/0f84b73cb5a575557c2d5c6c941f7086f91e6302.jpg" alt="Colégio Cristo Rei">
-    </div>
+<h2>Conheça Nossa Escola</h2>
 
-    <!-- Botões interativos -->
-    <button class="btn-interativo btn-sobre" onclick="toggleConteudo('sobre')">ℹ️ Sobre</button>
-    <div id="sobre" class="conteudo-toggle">
-        O Colégio Cristo Rei é uma instituição comprometida com a educação inclusiva, promovendo aprendizado de qualidade, respeito à diversidade e oportunidades iguais para todos os alunos.
-    </div>
+<div class="imagem-escola">
+    <img src="https://gmaisnoticias.com/fotos/0f84b73cb5a575557c2d5c6c941f7086f91e6302.jpg">
+</div>
 
-    <button class="btn-interativo btn-acessibilidade" onclick="toggleConteudo('acessibilidade')">♿ Acessibilidade</button>
-    <div id="acessibilidade" class="conteudo-toggle">
-        A acessibilidade no Colégio Cristo Rei inclui rampas, banheiros adaptados, recursos digitais e materiais inclusivos, garantindo que todos possam aprender sem barreiras.
-    </div>
+<button class="btn-interativo btn-sobre" onclick="toggle('sobre')">ℹ️ Sobre</button>
+<div id="sobre" class="conteudo-toggle">Escola com foco em inclusão e qualidade.</div>
 
-    <button class="btn-interativo btn-estrutura" onclick="toggleConteudo('estrutura')">♿ Estrutura</button>
-    <div id="estrutura" class="conteudo-toggle">
-        Rampas, corrimãos, banheiros adaptados e acessos projetados para todos os alunos, garantindo mobilidade segura e autonomia.
-    </div>
+<button class="btn-interativo btn-acessibilidade" onclick="toggle('acessibilidade')">♿ Acessibilidade</button>
+<div id="acessibilidade" class="conteudo-toggle">Ambiente acessível para todos.</div>
 
-    <button class="btn-interativo btn-ensino" onclick="toggleConteudo('ensino')">📚 Ensino</button>
-    <div id="ensino" class="conteudo-toggle">
-        Materiais adaptados, livros em braile, recursos multimídia e métodos de ensino inclusivos para que todos aprendam igualmente.
-    </div>
+<button class="btn-interativo btn-estrutura" onclick="toggle('estrutura')">🏫 Estrutura</button>
+<div id="estrutura" class="conteudo-toggle">Estrutura moderna.</div>
 
-    <button class="btn-interativo btn-inclusao" onclick="toggleConteudo('inclusao')">🤝 Inclusão</button>
-    <div id="inclusao" class="conteudo-toggle">
-        Respeito à diversidade, valorização das diferenças e incentivo à participação de todos em atividades escolares e sociais.
-    </div>
+<button class="btn-interativo btn-ensino" onclick="toggle('ensino')">📚 Ensino</button>
+<div id="ensino" class="conteudo-toggle">Ensino adaptado.</div>
 
-    <button class="btn-interativo btn-tecnologia" onclick="toggleConteudo('tecnologia')">💻 Tecnologia</button>
-    <div id="tecnologia" class="conteudo-toggle">
-        Uso de softwares educacionais, ferramentas de acessibilidade digital e dispositivos de apoio para alunos com necessidades especiais.
-    </div>
+<button class="btn-interativo btn-inclusao" onclick="toggle('inclusao')">🤝 Inclusão</button>
+<div id="inclusao" class="conteudo-toggle">Respeito e diversidade.</div>
 
-    <button class="btn-interativo btn-rampas" onclick="toggleConteudo('rampas')">🚪 Rampas</button>
-    <div id="rampas" class="conteudo-toggle">
-        Rampas seguras em toda a escola, garantindo que alunos com mobilidade reduzida possam se locomover sem obstáculos.
-    </div>
+<button class="btn-interativo btn-tecnologia" onclick="toggle('tecnologia')">💻 Tecnologia</button>
+<div id="tecnologia" class="conteudo-toggle">Ferramentas digitais.</div>
 
-    <button class="btn-interativo btn-biblioteca" onclick="toggleConteudo('biblioteca')">📖 Biblioteca Acessível</button>
-    <div id="biblioteca" class="conteudo-toggle">
-        Biblioteca com livros adaptados, recursos digitais e espaços acessíveis para todos os alunos.
-    </div>
+<button class="btn-interativo btn-rampas" onclick="toggle('rampas')">🚪 Rampas</button>
+<div id="rampas" class="conteudo-toggle">Mobilidade garantida.</div>
+
+<button class="btn-interativo btn-biblioteca" onclick="toggle('biblioteca')">📖 Biblioteca</button>
+<div id="biblioteca" class="conteudo-toggle">Biblioteca acessível.</div>
+
+<button class="btn-interativo btn-esportes" onclick="toggle('esportes')">⚽ Esportes</button>
+<div id="esportes" class="conteudo-toggle">Esportes inclusivos.</div>
+
+<button class="btn-interativo btn-eventos" onclick="toggle('eventos')">🎉 Eventos</button>
+<div id="eventos" class="conteudo-toggle">Eventos escolares.</div>
 
 </main>
 
 <footer>
-    <p>© 2026 - Projeto Escolar | Acessibilidade no Cristo Rei</p>
+    © 2026 - Projeto Escolar
 </footer>
 
 <script>
-    function toggleConteudo(id) {
-        const elemento = document.getElementById(id);
-        if (elemento.style.display === "block") {
-            elemento.style.display = "none";
-        } else {
-            elemento.style.display = "block";
-        }
+function toggle(id) {
+    let el = document.getElementById(id);
+
+    if (el.style.display === "block") {
+        el.style.display = "none";
+    } else {
+        el.style.display = "block";
     }
+}
 </script>
 
 </body>
