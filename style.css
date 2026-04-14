@@ -1,104 +1,76 @@
-/* ===== Geral ===== */
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Arial;
     margin: 0;
-    background: linear-gradient(135deg, #eef2ff, #f8fafc);
-    color: #1e293b;
+    background: #f1f5f9;
 }
 
-/* ===== Cabeçalho ===== */
+/* HEADER */
 header {
-    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    background: #4f46e5;
     color: white;
-    padding: 15px;
     text-align: center;
+    padding: 15px;
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
+    margin: 0 8px;
     text-decoration: none;
-    font-size: 14px;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ===== Conteúdo ===== */
-main {
-    padding: 20px;
-}
-
-h2 {
-    text-align: center;
-}
-
-/* ===== Imagem ===== */
+/* IMAGEM */
 .imagem-escola img {
     width: 90%;
     max-width: 500px;
     display: block;
-    margin: 20px auto;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    margin: auto;
+    border-radius: 12px;
 }
 
-/* ===== Botões ===== */
+/* BOTÕES */
 .btn-interativo {
     display: block;
     width: 90%;
-    max-width: 300px;
+    max-width: 320px;
 
-    margin: 12px auto;
-    padding: 14px;
+    margin: 10px auto;
+    padding: 12px;
 
     border: none;
-    border-radius: 14px;
+    border-radius: 10px;
 
-    font-size: 15px;
+    color: white;
     font-weight: bold;
-
     cursor: pointer;
-    transition: 0.3s;
 }
 
-/* Cores */
-.btn-sobre { background: #3b82f6; color: white; }
-.btn-acessibilidade { background: #7c3aed; color: white; }
-.btn-estrutura { background: #10b981; color: white; }
-.btn-ensino { background: #f59e0b; color: white; }
-.btn-inclusao { background: #e11d48; color: white; }
-.btn-tecnologia { background: #06b6d4; color: white; }
-.btn-rampas { background: #ea580c; color: white; }
-.btn-biblioteca { background: #16a34a; color: white; }
-.btn-esportes { background: #9333ea; color: white; }
-.btn-eventos { background: #be123c; color: white; }
+/* cores */
+.btn-sobre { background: #3b82f6; }
+.btn-acessibilidade { background: #7c3aed; }
+.btn-estrutura { background: #10b981; }
+.btn-ensino { background: #f59e0b; }
+.btn-inclusao { background: #e11d48; }
+.btn-tecnologia { background: #06b6d4; }
+.btn-rampas { background: #ea580c; }
+.btn-biblioteca { background: #16a34a; }
+.btn-esportes { background: #9333ea; }
+.btn-eventos { background: #be123c; }
 
-/* Hover */
-.btn-interativo:hover {
-    transform: scale(1.05);
-}
-
-/* ===== Conteúdo escondido ===== */
+/* CONTEÚDO */
 .conteudo-toggle {
     display: none;
-    max-width: 650px;
+    max-width: 600px;
     margin: 10px auto;
-    padding: 16px;
+    padding: 15px;
 
     background: white;
-    border-left: 5px solid #6366f1;
-
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-radius: 10px;
 }
 
-/* ===== Rodapé ===== */
+/* FOOTER */
 footer {
     text-align: center;
-    padding: 12px;
-    background: #6366f1;
+    padding: 10px;
+    background: #4f46e5;
     color: white;
-    margin-top: 30px;
 }

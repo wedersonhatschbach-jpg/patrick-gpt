@@ -1,79 +1,116 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cristo Rei - Educação Inclusiva</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cristo Rei - Educação Inclusiva</title>
 
-    <!-- LINK DO CSS -->
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <header>
-    <h2>Cristo Rei</h2>
+    <h1>Cristo Rei</h1>
+    <p>Educação Inclusiva para Todos</p>
+
     <nav>
         <a href="#">Início</a>
         <a href="#">Sobre</a>
+        <a href="#">Acessibilidade</a>
         <a href="#">Contato</a>
     </nav>
 </header>
 
 <main>
 
-<h2>Conheça Nossa Escola</h2>
+<section class="topo">
+    <h2>Conheça Nossa Escola</h2>
 
-<div class="imagem-escola">
-    <img src="https://gmaisnoticias.com/fotos/0f84b73cb5a575557c2d5c6c941f7086f91e6302.jpg">
-</div>
+    <div class="imagem-escola">
+        <img src="https://gmaisnoticias.com/fotos/0f84b73cb5a575557c2d5c6c941f7086f91e6302.jpg" alt="Escola">
+    </div>
+</section>
+
+<section class="botoes">
 
 <button class="btn-interativo btn-sobre" onclick="toggle('sobre')">ℹ️ Sobre</button>
-<div id="sobre" class="conteudo-toggle">Escola com foco em inclusão e qualidade.</div>
+<div id="sobre" class="conteudo-toggle">
+    Escola focada em inclusão, respeito e qualidade de ensino.
+</div>
 
 <button class="btn-interativo btn-acessibilidade" onclick="toggle('acessibilidade')">♿ Acessibilidade</button>
-<div id="acessibilidade" class="conteudo-toggle">Ambiente acessível para todos.</div>
+<div id="acessibilidade" class="conteudo-toggle">
+    Rampas, materiais adaptados e suporte completo.
+</div>
 
 <button class="btn-interativo btn-estrutura" onclick="toggle('estrutura')">🏫 Estrutura</button>
-<div id="estrutura" class="conteudo-toggle">Estrutura moderna.</div>
+<div id="estrutura" class="conteudo-toggle">
+    Ambientes modernos e acessíveis.
+</div>
 
 <button class="btn-interativo btn-ensino" onclick="toggle('ensino')">📚 Ensino</button>
-<div id="ensino" class="conteudo-toggle">Ensino adaptado.</div>
+<div id="ensino" class="conteudo-toggle">
+    Ensino adaptado para todos os alunos.
+</div>
 
 <button class="btn-interativo btn-inclusao" onclick="toggle('inclusao')">🤝 Inclusão</button>
-<div id="inclusao" class="conteudo-toggle">Respeito e diversidade.</div>
+<div id="inclusao" class="conteudo-toggle">
+    Valorização da diversidade.
+</div>
 
 <button class="btn-interativo btn-tecnologia" onclick="toggle('tecnologia')">💻 Tecnologia</button>
-<div id="tecnologia" class="conteudo-toggle">Ferramentas digitais.</div>
+<div id="tecnologia" class="conteudo-toggle">
+    Uso de tecnologia educacional moderna.
+</div>
 
 <button class="btn-interativo btn-rampas" onclick="toggle('rampas')">🚪 Rampas</button>
-<div id="rampas" class="conteudo-toggle">Mobilidade garantida.</div>
+<div id="rampas" class="conteudo-toggle">
+    Acesso facilitado em toda a escola.
+</div>
 
 <button class="btn-interativo btn-biblioteca" onclick="toggle('biblioteca')">📖 Biblioteca</button>
-<div id="biblioteca" class="conteudo-toggle">Biblioteca acessível.</div>
+<div id="biblioteca" class="conteudo-toggle">
+    Biblioteca com recursos acessíveis.
+</div>
 
 <button class="btn-interativo btn-esportes" onclick="toggle('esportes')">⚽ Esportes</button>
-<div id="esportes" class="conteudo-toggle">Esportes inclusivos.</div>
+<div id="esportes" class="conteudo-toggle">
+    Atividades físicas inclusivas.
+</div>
 
 <button class="btn-interativo btn-eventos" onclick="toggle('eventos')">🎉 Eventos</button>
-<div id="eventos" class="conteudo-toggle">Eventos escolares.</div>
+<div id="eventos" class="conteudo-toggle">
+    Eventos escolares e culturais.
+</div>
+
+</section>
 
 </main>
 
 <footer>
-    © 2026 - Projeto Escolar
+    <p>© 2026 - Projeto Cristo Rei</p>
 </footer>
 
 <script>
-function toggle(id) {
-    let el = document.getElementById(id);
 
-    if (el.style.display === "block") {
+/* FUNÇÃO MELHORADA */
+function toggle(id) {
+
+    let todos = document.querySelectorAll('.conteudo-toggle');
+
+    // fecha todos
+    todos.forEach(el => {
         el.style.display = "none";
-    } else {
-        el.style.display = "block";
-    }
+    });
+
+    let elemento = document.getElementById(id);
+
+    // abre só o clicado
+    elemento.style.display = "block";
 }
+
 </script>
 
 </body>
